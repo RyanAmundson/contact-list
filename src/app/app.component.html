@@ -1,0 +1,18 @@
+<div class="tag-list-container">
+  <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal">
+    <mat-chip class="example-box" cdkDrag *ngFor="let tag of (user$ | async)?.tags">
+      {{tag}}
+    </mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="contact-list" *ngFor="let contact of (contacts$ | async)">
+  <mat-card>
+    {{ contact.displayName }}
+    <mat-chip-list aria-label="tags">
+      <mat-chip *ngFor="let tag of contact?.tags">
+        {{tag}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card>
+</div>

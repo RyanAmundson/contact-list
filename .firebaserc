@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "contact-list-d8ff6": {
+      "hosting": {
+        "contact-list": [
+          "contact-list-d8ff6"
+        ]
+      }
+    }
+  }
+}
